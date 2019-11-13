@@ -1,0 +1,87 @@
+/*
+* @Author: Marte
+* @Date:   2019-10-21 09:32:50
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-10-22 20:17:03
+*/
+body,h1,h2,h3,h4,p,ul,li{
+            margin:0px;
+            padding:0px;
+        }
+        
+        #container{
+            width:1020px;
+            height:580px;
+            text-align: center;
+            margin:0 auto;
+            padding-top:30px;
+            border-radius: 20px;
+            background-color:#edf1f4;
+        }
+        div#tab{
+            height:34px;
+            background-color:#F9FCFF;
+            border-bottom:1px solid #ccc;
+        }
+        div#tab ul{
+            list-style:none;
+            padding-left:15px;
+        }
+        div#tab li{
+            float:left;
+            height:30px;
+        }
+        div#tab li a{
+            display:block;
+            font:14px/1.5em 微软雅黑;
+            margin-top:3px;
+            padding:5px 10px 5px 10px;
+            text-decoration:none;
+            color:#333;
+            /* border-left:1px solid #ccc; */
+        }
+        div#tab li a:hover{color:#07f}
+        div#title{
+            text-align: center;
+            color:#09f;
+            font:24px "Charlemagne ...";
+            padding-top:30px;
+        }
+        div#title .text{
+            padding-top:10px;
+            font:18px "微软雅黑";
+            color:#888888;
+        }
+        div#box{
+            border:1px solid #ccc;
+            width: 245px;
+            // height:185px;
+            padding:2px 3px 0px 2px;
+            margin:0 auto;
+            background: #fff;
+            // text-align:center;
+            margin-bottom: 22px;
+            margin-top:30px;
+        }
+        div#box input{
+            width: 228px;
+            height:34px;
+            border:none;
+            border-bottom:1px solid #ccc;
+            font:12px/2em "微软雅黑";
+            padding-left:8px;
+            color:#555;
+            outline:none;
+        }
+        div#submit{
+            width: 249px;
+            height:36px;
+            background:#09f;
+            color: #fff;
+            line-height: 36px;
+            text-align:center;
+            margin:0px auto;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top:50px;
+        }

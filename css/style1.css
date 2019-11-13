@@ -1,0 +1,139 @@
+/*
+* @Author: Marte
+* @Date:   2019-10-21 16:37:51
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-10-25 20:34:00
+*/
+body,h1,h2,h3,h4,h5,ul,li,p{
+    margin:0px;
+    padding:0px;
+}
+body{
+    // background-color:#c44c38;
+    font: 12px/1.5em "微软雅黑";
+    text-align:center;
+}
+.bg{
+    background-color:#c44c38;
+    width:960px;
+    height:520px;
+    text-align: center;
+    margin:0 auto;
+    margin-top:10px;
+    padding-top:60px;
+    border-radius: 20px;
+}
+div.bg div.main{
+    background-color:#fff;
+    width: 790px;
+    height: 450px;
+    margin:0 auto;
+    border-radius:15px;
+}
+div.main div.i_tab{
+    height:42px;
+    background-color:#f7f7f7;
+    border-radius:15px;
+}
+div.i_tab ul{
+    width: 770px;
+    list-style: none;
+    padding:10px 0px 10px 20px;
+}
+div.i_tab li{
+    width:18px;
+    height:18px;
+    float: left;
+    border-radius:9px;
+    margin-right:8px;
+}
+div.i_tab li.one{
+    background-color:#f3a971;
+}
+div.i_tab li.two{
+    background-color:#f9d877;
+}
+div.i_tab li.three{
+    background-color:#a3d561;
+}
+div.i_tab li.four{
+    font:24px "黑体";
+    display: block;
+    width:350px;
+    height:32px;
+    text-align:right;
+    color:#999;
+}
+div.i_tab li.five{
+    font:14px "微软雅黑";
+    width:300px;
+    text-align:right;
+    color:#777;
+}
+div.i_tab li.five a{
+    text-decoration: none;
+    display:inline-block;
+    padding-left: 4px;
+}
+div#text{
+    margin-top:15px;
+}
+div#text div#i_tile input{
+    outline:none;
+    width:160px;
+    background: none;
+    height:26px;
+    margin:0 10px 3px 10px;
+    padding:3px 0px 0px 10px;
+    color:#666;
+}
+div#text div#i_art{
+    width:620px;
+    margin:0 auto;
+    height:80px;
+    border:1px solid #999;
+    // border-radius:15px;
+    padding:3px 2px 2px 2px;
+}
+div#text textarea{
+    outline:none;
+    font:14px "微软雅黑";
+    padding:10px;
+    border:none;
+}
+
+s{
+    font:24px "Orator Std";
+}
+div#text input{
+    width:120px;
+    height: 33px;
+    font-size:16px;
+    color:#fff;
+    background-color:#92ca19;
+    border: 1px solid #ccc;
+    border-radius:5px;
+}
+div#content{
+    width: 620px;
+    height:220px;
+    background-color:#eee;
+    margin:0 auto;
+    margin-top:10px;
+}
+div#content div.con_tab{
+    height:36px;
+    width:620px;
+    background-color:#ccc;
+    text-align:left;
+}
+div#content div.con_tab p{
+    display:inline-block;
+    line-height: 26px;
+    margin:5px 0px 0px 15px;
+    padding:7px 5px 5px 5px;
+    font:16px "微软雅黑";
+    color:#333;
+    background-color:#eee;
+}
+

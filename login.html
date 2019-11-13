@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>欢迎来到登录界面~</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+    	div#div1{
+    		position:fixed;
+    		top:0px;right:130px;
+    		left:130px;bottom: 0px;
+    		background-color: #000;
+    		opacity: 0.3;
+    		display:none;
+    	}
+        div#tab li.login{
+            margin-top:2px;
+            border-right:1px solid #ccc;
+            border-left:1px solid #ccc;
+            border-top:2px solid #090;
+            border-radius:3px;
+            background:#edf1f4;
+            border-bottom:1px solid #edf1f4;
+        }
+        div.main #btn1{
+            color:#09f;
+            border-bottom:1px solid #09f;
+        }
+    </style>
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$("#submit").click(function(){
+    			$.ajax({
+    				type:"POST",
+    				url:"data1.php",
+    				data:{userName:$("#userName").val(),pwd:$("#pwd").val()},
+    				dataType:"json",
+    				success:function(data){
+    					if(data.status=="10001"){
+    						location.href="message1.php";
+    					}else{
+    						$("#div1").slideDown(600).delay(1000).slideToggle(600);
+    					}
+    				}
+    			});
+    		})
+    	})
+    </script>
+</head>
+<body>
+	<div id="div1">
+		用户名或密码错误,请重新登录
+	</div>
+<div id="container">
+    <div id="tab">
+        <ul>
+            <li><a href="#">欢迎来到留言板</a></li>
+            
+            <li class="login"><a href="login.html">登录界面</a></li>
+        </ul>
+    </div>
+    <div id="title">
+        <h1>message board~</h1>
+        <p class="text">生活热爱分享 ▪<span> 请留下你的足迹~</span></p>
+    </div>
+    <div id="box">
+            <input type="text" id="userName" placeholder="请输入用户名">
+            <input type="password" id="pwd" placeholder="请输入密码">
+    </div>
+    <div id="submit">
+        <span>登 录</span>
+    </div>
+
+
+
+
+</div>
+
+</body>
+</html>
